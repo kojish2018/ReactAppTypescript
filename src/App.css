@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.diagram-container{
+  background: #dabfd3;
+    width: 100vw;
+    height: 100vh;
+}
+
+
