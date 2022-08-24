@@ -11,7 +11,7 @@ class AdvancedLinkModel extends DefaultLinkModel {
   constructor() {
     super({
       type: "advanced",
-      width: 4
+      width: 4,
     });
   }
 }
@@ -73,7 +73,9 @@ class AdvancedLinkWidget extends DefaultLinkWidget {
         point={point as any}
         previousPoint={previousPoint as any}
         colorSelected={this.props.link.getOptions().selectedColor}
+        // colorSelected="RGB(0,255,255)"
         color={this.props.link.getOptions().color}
+        // color="RGB(0,255,255)"
       />
     );
   }
