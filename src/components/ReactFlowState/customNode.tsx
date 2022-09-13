@@ -13,13 +13,18 @@ const CustomNode = ({ data, selected }: any) => {
       // label={data.name}
       label={
         <div>
-          <Handle
-            type="target"
-            position="top"
-            id="i__data"
-            style={{ ...style.handle, ...style.top }}
-            // isValidConnection={isValidInput}
-          />
+          {data.direction === "vertical" ? (
+            <Handle
+              type="target"
+              position="top"
+              id="i__data"
+              style={{ ...style.handle, ...style.top }}
+              className="topHandle"
+              // isValidConnection={isValidInput}
+            />
+          ) : (
+            <div />
+          )}
           {data.label}
         </div>
       }
@@ -27,22 +32,24 @@ const CustomNode = ({ data, selected }: any) => {
       color={"LightCyan"}
       content={
         <div style={style.io}>
-          {/* {!data.uploaded && (
+          {data.direction === "vertical" ? (
+            <div />
+          ) : (
             <Handle
               type="target"
-              position="top"
+              position="left"
               id="i__data"
               style={{ ...style.handle, ...style.top }}
               // isValidConnection={isValidInput}
             />
-          )} */}
+          )}
           {data.contents.map((element) => {
-            return <p>element</p>;
+            return <p>{element}</p>;
           })}
           <Handle
             type="source"
             // position="right"
-            position="bottom"
+            position={data.direction === "vertical" ? "bottom" : "right"}
             id="o__data"
             style={{ ...style.handle, ...style.right }}
             // isValidConnection={isValidOutput}

@@ -11,7 +11,7 @@ interface DiagramPageProps {}
 const DiagramPage: FC<DiagramPageProps> = () => (
   <div>
     <div>ReactFlowStateWorked??</div>
-    <div style={{ height: 800 }}>{Flow()}</div>
+    <div style={{ height: 900, width: 800 }}>{Flow()}</div>
     <div className={styles.DiagramPage}>DiagramPage Component</div>
     <div id="application-react-flow" style={{ height: 800 }}></div>
     <ReactFlowComponent />

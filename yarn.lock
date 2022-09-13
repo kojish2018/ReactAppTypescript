@@ -1960,6 +1960,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/dagre@^0.7.48":
+  "integrity" "sha512-rF3yXSwHIrDxEkN6edCE4TXknb5YSEpiXfLaspw1I08grC49ZFuAVGOQCmZGIuLUGoFgcqGlUFBL/XrpgYpQgw=="
+  "resolved" "https://registry.npmjs.org/@types/dagre/-/dagre-0.7.48.tgz"
+  "version" "0.7.48"
+
 "@types/eslint-scope@^3.7.3":
   "integrity" "sha512-PB3ldyrcnAicT35TWPs5IcwKD8S333HMaa2VVv4+wdvebJkjWuW/xESoB8IwRcog8HYVYamb1g/R31Qv5Bx03g=="
   "resolved" "https://registry.npmjs.org/@types/eslint-scope/-/eslint-scope-3.7.3.tgz"

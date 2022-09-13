@@ -11,4 +11,12 @@ export default [
     // label: "test",
   },
   { id: "e2-3", source: "2", target: "3" },
+  { id: "e3-4", source: "3", target: "4", type: "smoothstep" },
+  {
+    id: "e3-5",
+    source: "3",
+    target: "5",
+    type: "smoothstep",
+    style: { strokeWidth: 2, stroke: "black" },
+  },
 ] as Edge[];
